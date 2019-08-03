@@ -91,11 +91,11 @@ always @(posedge clk) begin
         freq <=0;
     end
     else if(samp_counter == 20'b11111111111111111111) begin
-        if(data_width > 16'd1100)
+        if(data_width > 16'd1500) // 1200
             freq <= 1;
         else if(data_width > 16'd700)
             freq <= 2;
-        else if(data_width > 16'd520)
+        else if(data_width > 16'd580) // 520
             freq <= 3;
         else if(data_width > 16'd430)
             freq <= 4;

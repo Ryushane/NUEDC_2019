@@ -157,14 +157,12 @@ GETPERIOD getperiod(
 
 wire pll_out;
 assign PLLCLKOUT = pll_out;
-(*mark_debug = "true"*)wire signed[7:0]pd_out;
 ME_PLL me_pll(
     .clk(ds_clk),
     .rst(rst),
     .sig(nrout),
     .fc(centerFreq),
-    .pd_out(pd_out),
-    .clkout(pll_out)
+    .clkoutstab(pll_out)
 );
 
 // fifo_generator_out_ns outfifo(

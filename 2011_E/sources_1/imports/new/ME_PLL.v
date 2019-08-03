@@ -25,8 +25,8 @@ module ME_PLL(
         input rst,
         input sig,
         input [7:0]fc,
-        output signed[7:0] pd_out,
-        output clkout
+        output clkout,
+        output clkoutstab
     );
     wire [31:0] vcophaseincr;
     reg [31:0] crcenter=32'd8589934;   //~10kHz @ 10MHz
@@ -47,7 +47,14 @@ module ME_PLL(
     
     reg signed [15:0]pd=16'sd0;
     
-    assign pd_out = pd[15:8];
+    wire [31:0] vcophaseincrstab;
+    reg signed [31:0] crmodstab=32'd0;
+    assign vcophaseincrstab=crcenter+crmodstab;
+    wire vcooutstab;
+    reg signed [15:0]pdstab=16'sd0;
+    wire vcooutstabc;
+    assign clkoutstab=vcooutstabc;
+
 
     always@(posedge clk)begin
         if(rst)begin
@@ -59,6 +66,8 @@ module ME_PLL(
             clkedgecnt<=10'd0;
             pd<=16'sd0;
             windowlen<=10'd32;
+            crmodstab<=32'd0;
+            pdstab<=16'sd0;
         end else begin
             siglast<=sig;
             if(sig==1'b1 && siglast==1'b0)begin
@@ -128,6 +137,14 @@ module ME_PLL(
             end else begin
                 windowlen<=10'd160;
             end
+            
+            //stablizing PLL
+            if(vcooutstab^vcoout)begin
+                pdstab<=pdstab-pdstab/16'sd512+16'sd32;
+            end else begin
+                pdstab<=pdstab-pdstab/16'sd512-16'sd32;
+            end
+            crmodstab<=32'sd32*pdstab;
         end
     end
     
@@ -139,4 +156,13 @@ module ME_PLL(
         .outs(vcoout), //output outs
         .outc() //output outc
     );
+
+    DDS_SQUARE vcob_inst(
+        .clk(clk), //input clk
+        .rst(rst), //input rst
+        .phaseincr(vcophaseincrstab), //input phase increment
+        .outs(vcooutstab), //output outs
+        .outc(vcooutstabc) //output outc
+    );
+    
 endmodule

@@ -112,7 +112,7 @@ clk_wiz_ds Ds_FIFO_CLK(
         .rst(rst),
         .sig(nrout),
         .fc(centerFreq),
-        .clkout(pll_out)
+        .clkoutstab(pll_out)
     );
 
     wire signed outrd_data;

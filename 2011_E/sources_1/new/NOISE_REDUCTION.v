@@ -54,7 +54,7 @@ module NOISE_REDUCTION(
             mfcmpsr<=16'd0;
             cmpdebounce<=1'b0;
         end else begin
-            dc<=dc-dc/32'sd16384+mfoutexp/32'sd16384;
+            dc<=dc-dc/32'sd32768+mfoutexp/32'sd32768;
             mfdetrend<=mfout-dccut;
             
             mfcmpsr<={mfcmpsr[14:0],mfcmp};
