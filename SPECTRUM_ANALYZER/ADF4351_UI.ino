@@ -13,9 +13,9 @@
 static const char* TAG = "UI"; // ESP32_log
 
 #define CLOCKSPEED 1000000
-#define CS 35 // 35不能作为输出端口，要换一个
+#define CS 32 // 35不能作为输出端口，要换一个
 #define MOSI 13
-#define CE 32
+#define CE 33
 
 #define INITFREQ 90.7
 
