@@ -22,7 +22,6 @@
 #ifndef ADF4351_h
 #define ADF4351_h
 
-#include "Arduino.h"
 
 class ADF4351
 {
@@ -60,13 +59,13 @@ class ADF4351
     private:
         // Instance variables that hold pinout mapping
         byte _CS, _CE;
-        
         unsigned long _rcounter;
         // Instance variables for ...
         bool _powerdown, _auxEnabled, _rfEnabled, _feedbackType, _prescaler;
 
         // register values
-        byte _r0[4], _r1[4], _r2[4], _r3[4], _r4[4], _r5[4];
+        //byte _r0[4], _r1[4], _r2[4], _r3[4], _r4[4], _r5[4];
+        unsigned long _r0,_r1,_r2,_r3,_r4,_r5;
 
         unsigned gcd_iter(unsigned long int, unsigned long int);
 
@@ -77,7 +76,7 @@ class ADF4351
         void setR3();
         void setR4();
         void setR5();
-        void writeRegister(byte[4]);
+        void writeRegister(unsigned long);
 
 
 

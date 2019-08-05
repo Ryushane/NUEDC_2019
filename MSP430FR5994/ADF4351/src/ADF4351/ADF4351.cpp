@@ -18,11 +18,10 @@
 
 
  */
-#define CLOCKSPEED 1000000
-#include <Arduino.h>
+#define CLOCKSPEED 100000
 #include <SPI.h>
 #include "ADF4351.h"
-
+#include <Arduino.h>
 
 // NOTE: Currently, set up for channel spacing of 10Mhz; might ammend later if needed,
 //  but this was easy and takes care of forseeable applications...
@@ -54,7 +53,7 @@ void ADF4351::initialize(double freq, double refFreq = 100){
     _refFreq = refFreq;
     _rcounter = 4;
     _PFDFreq = _refFreq / _rcounter;
-    _mod = 2;
+    _mod = 1;
     _frac = 0;
     _prescaler = 1; // _prescaler = 8/9
     _phase = 1;
@@ -130,8 +129,6 @@ void ADF4351::setFreq(double freq){
     _mod = _mod / d;
     _frac = _frac / d;
 
-    if(_mod == 1 && _frac == 0) _mod = 2; 
-    // ESP_LOGI(TAG, "INT = %ld, MOD is %ld , FRAC = %ld", _int, _mod, _frac);
     ADF4351::update();
 }
 
@@ -203,82 +200,91 @@ void ADF4351::setAuxPower(int pow){
 // REGISTER UPDATE FUNCTIONS
 
 void ADF4351::setR0(){
-    unsigned long r0 = (_int << 15) +
-            (_frac << 3); // sets int value... 
-    byte r0Ary[] = { lowByte(r0 >> 24), lowByte(r0 >> 16), lowByte(r0 >> 8), lowByte(r0) };
-    memcpy(&_r0, &r0Ary, sizeof(r0Ary));
-    // ESP_LOGI(TAG, "Register 0 = %lx", r0);
+    unsigned long r0 = ((unsigned long)_int << 15) +
+            ((unsigned long)_frac << 3); // sets int value...
+    ;
+//    byte r0Ary[] = { lowByte(r0 >> 24), lowByte(r0 >> 16), lowByte(r0 >> 8), lowByte(r0) };
+//    memcpy(&_r0, &r0Ary, sizeof(r0Ary));
+    _r0=r0;
 }
 
 void ADF4351::setR1(){
-    unsigned long r1 = (_prescaler << 27) +
-            (_phase << 15) + // phase value = 1
-            (_mod << 3) + // modulus value = 1
-             1; // register value
-    // ESP_LOGI(TAG, "Register 1 = %lx", r1);
-    byte r1Ary[] = { lowByte(r1 >> 24), lowByte(r1 >> 16), lowByte(r1 >> 8), lowByte(r1) };
-    memcpy(&_r1, &r1Ary, sizeof(r1Ary));
+    unsigned long r1 = ((unsigned long)_prescaler << 27) +
+            ((unsigned long)_phase << 15) + // phase value = 1
+            ((unsigned long)_mod << 3) + // modulus value = 1
+            (unsigned long)1; // register value
+    _r1=r1;
+//    byte r1Ary[] = { lowByte(r1 >> 24), lowByte(r1 >> 16), lowByte(r1 >> 8), lowByte(r1) };
+//    memcpy(&_r1, &r1Ary, sizeof(r1Ary));
 }
 
 void ADF4351::setR2(){
-    unsigned long r2 =   (0 << 26) +  // muxout three state
-            (_rcounter << 14) +  // r-counter = 1 with 100M oscillator r-counter = 4
-            (7 << 9) +  // charge pump = 2.5
-            (1 << 6) +  // digital lock detect + polarity FRAC MODE
-            (_powerdown << 5) +   // powerdown 0 = false; 1 = true
+    unsigned long r2 =   ((unsigned long)0 << 26) +  // muxout three state
+            ((unsigned long)_rcounter << 14) +  // r-counter = 1 with 100M oscillator r-counter = 4
+            ((unsigned long)7 << 9) +  // charge pump = 2.5
+            ((unsigned long)1 << 6) +  // digital lock detect + polarity FRAC MODE
+            ((unsigned long)_powerdown << 5) +   // powerdown 0 = false; 1 = true
             2; // register value
-    // ESP_LOGI(TAG, "Register 2 = %lx", r2);    
-    byte r2Ary[] =  { lowByte(r2 >> 24), lowByte(r2 >> 16), lowByte(r2 >> 8), lowByte(r2) };
-    memcpy(&_r2, &r2Ary, sizeof(r2Ary));
+    _r2=r2;
+//    byte r2Ary[] =  { lowByte(r2 >> 24), lowByte(r2 >> 16), lowByte(r2 >> 8), lowByte(r2) };
+//    memcpy(&_r2, &r2Ary, sizeof(r2Ary));
 }
 
 void ADF4351::setR3(){
-    unsigned long r3 = (1203); // (all zero, except register control value = 3); 4B3
-    // ESP_LOGI(TAG, "Register 3 = %lx", r3);   
-    byte r3Ary[] = { lowByte(r3 >> 24), lowByte(r3 >> 16), lowByte(r3 >> 8), lowByte(r3) };
-    memcpy(&_r3, &r3Ary, sizeof(r3Ary));
+   unsigned long r3 = (1203); // (all zero, except register control value = 3); 4B3
+
+//   byte r3Ary[] = { lowByte(r3 >> 24), lowByte(r3 >> 16), lowByte(r3 >> 8), lowByte(r3) };
+//   memcpy(&_r3, &r3Ary, sizeof(r3Ary));
+   _r3=r3;
 }
 
 void ADF4351::setR4(){
 
-    unsigned long r4 = (_feedbackType << 23) + // divided/fundamental feedback
-        (_divider << 20) + // RF divider
-        (200 << 12) + // band select clock divider
-        (0 << 9) + // vco powerdown = false; MTLD = 1; aux output = divided;
-        (_auxEnabled << 8) + // AUX OUTPUT enable/disable
-        (_auxPower << 6) + // aux output power = {-4, -1, 2, 5dbm}
-        (_rfEnabled << 5) + // RF OUTPUT ENABLED
-        (_rfPower << 3) + // RF output power = 5dbm
-        4;  // register select
-    // ESP_LOGI(TAG, "Register 4 = %lx", r4);
-    byte r4Ary[] = { lowByte(r4 >> 24), lowByte(r4 >> 16), lowByte(r4 >> 8), lowByte(r4) };
-    memcpy(&_r4, &r4Ary, sizeof(r4Ary));
+    unsigned long r4 = ((unsigned long)_feedbackType << 23) + // divided/fundamental feedback
+        ((unsigned long)_divider << 20) + // RF divider
+        ((unsigned long)200 << 12) + // band select clock divider
+        ((unsigned long)0 << 9) + // vco powerdown = false; MTLD = 1; aux output = divided;
+        ((unsigned long)_auxEnabled << 8) + // AUX OUTPUT enable/disable
+        ((unsigned long)_auxPower << 6) + // aux output power = {-4, -1, 2, 5dbm}
+        ((unsigned long)_rfEnabled << 5) + // RF OUTPUT ENABLED
+        ((unsigned long)_rfPower << 3) + // RF output power = 5dbm
+        (unsigned long)4;  // register select
+    _r4=r4;
+//    byte r4Ary[] = { lowByte(r4 >> 24), lowByte(r4 >> 16), lowByte(r4 >> 8), lowByte(r4) };
+//    memcpy(&_r4, &r4Ary, sizeof(r4Ary));
 
 
-}   
+}
+
 void ADF4351::setR5(){
-    unsigned long r5 = (1 << 22) + (3<<19) + 5; // lock detect pin mode = digital lock detect
-    // ESP_LOGI(TAG, "Register 5 = %lx", r5);
-    byte r5Ary[] = { lowByte(r5 >> 24), lowByte(r5 >> 16), lowByte(r5 >> 8), lowByte(r5) };
-    memcpy(&_r5, &r5Ary, sizeof(r5Ary));
-
+    unsigned long r5 = ((unsigned long)1<<22) + ((unsigned long)3<<19) + 5; // lock detect pin mode = digital lock detect
+//    unsigned long r5 = 5767173; // lock detect pin mode = digital lock detect
+//    byte r5Ary[] = { lowByte(r5 >> 24), lowByte(r5 >> 16), lowByte(r5 >> 8), lowByte(r5) };
+//    memcpy(&_r5, &r5Ary, sizeof(r5Ary));
+    _r5=r5;
+    ;
 }
 // Writes SPI to particular register.
 //      registerInfo is a 2-element array which contains [register, number of bytes]
-void ADF4351::writeRegister(byte data[]){
-    SPI.beginTransaction(SPISettings(CLOCKSPEED, MSBFIRST, SPI_MODE0));
+void ADF4351::writeRegister(unsigned long data){
+//    unsigned long buf[4];
+//    buf[0] = data>>24 & 0xFF;
+//    buf[1] = data>>16 & 0xFF;
+//    buf[2] = data>>8 & 0xFF;
+//    buf[3] = data & 0xFF;
 
     digitalWrite(_CS, LOW);
+    SPI.beginTransaction(SPISettings(CLOCKSPEED, MSBFIRST, SPI_MODE0));
+    SPI.transfer((data>>24 & 0xFF));
+    SPI.transfer((data>>16 & 0xFF));
+    SPI.transfer((data>>8 & 0xFF));
+    SPI.transfer((data & 0xFF));
+//    SPI.transfer(buf[0]);
+//    SPI.transfer(buf[1]);
+//    SPI.transfer(buf[2]);
+//    SPI.transfer(buf[3]);
 
-    // Writes the data
-    for(int i = 0; i < 4 ; i++){
-        SPI.transfer(data[i]);
-        // ESP_LOGI(TAG, "data %d has benn written into the register %u", i, data[i], HEX);  
-    }
-
-    digitalWrite(_CS, HIGH);
     SPI.endTransaction();
-
-    
+    digitalWrite(_CS, HIGH);
 }
 
