@@ -1,0 +1,59 @@
+#include "ADF4351.h"
+#include <SPI.h>
+
+#define clock 14
+#define data 13
+#define CE 32
+#define LE0 33 // device 0
+#define LE1 25 // device 1
+#define LE2 26 // device 2
+
+ADF4351 adf4351_150(clock,data,LE0,CE); // declares object PLL of type ADF4351
+// ADF4351 adf4351_101(clock,data,LE1,CE);
+
+void setup() {
+  Serial.begin(115200);
+  adf4351_150.begin();
+  // adf4351_101.begin();
+
+  // // ref = 100M RFout = 45M
+  // adf4351_101.WriteRegister(0x00580005); // default value LD working mode
+  // adf4351_101.WriteRegister(0xEC803C); // output divider = 16 // band select clock divider
+  // adf4351_101.WriteRegister(0x000004B3); // default Antibacklash pulse width
+  // adf4351_101.WriteRegister(0x10E42); // noise mode, R=4
+  // adf4351_101.WriteRegister(0x8008029); // prescaler=4/5、 MOD=25
+  // adf4351_101.WriteRegister(0x398008); // int = 128 frac = 0
+
+  // ref = 100M RFout = 42.5M
+  adf4351_150.WriteRegister(0x00580005); // default value LD working mode
+  adf4351_150.WriteRegister(0xEC803C); // output divider = 16 // band select clock divider
+  adf4351_150.WriteRegister(0x000004B3); // default Antibacklash pulse width
+  adf4351_150.WriteRegister(0x10E42); // noise mode, R=4
+  adf4351_150.WriteRegister(0x8008029); // prescaler=4/5、 MOD=25
+  adf4351_150.WriteRegister(0x360020); // int = 128 frac = 0
+
+  // // ref = 26M RFout = 150M
+  // adf4351_150.WriteRegister(0x00580005); // default value LD working mode
+  // adf4351_150.WriteRegister(0xCD003C); // output divider = 16 // band select clock divider
+  // adf4351_150.WriteRegister(0x000004B3); // default Antibacklash pulse width
+  // adf4351_150.WriteRegister(0x4E42); // noise mode, R=4
+  // adf4351_150.WriteRegister(0x8008069); // prescaler=4/5、 MOD=25
+  // adf4351_150.WriteRegister(0x2E0020); // int = 128 frac = 0
+
+
+  // // ref = 26M RFout = 101.5M
+  // adf4351_101.WriteRegister(0x00580005); // default value LD working mode
+  // adf4351_101.WriteRegister(0xDD003C); // output divider = 16 // band select clock divider
+  // adf4351_101.WriteRegister(0x000004B3); // default Antibacklash pulse width
+  // adf4351_101.WriteRegister(0x4E42); // noise mode, R=4
+  // adf4351_101.WriteRegister(0x8008069); // prescaler=4/5、 MOD=25
+  // adf4351_101.WriteRegister(0x3E0060); // int = 128 frac = 0
+
+
+  Serial.println("All registers have benn written!");
+}
+
+void loop() {
+  // put your main code here, to run repeatedly: 
+  
+}

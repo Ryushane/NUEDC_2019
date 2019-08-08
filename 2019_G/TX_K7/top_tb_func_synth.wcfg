@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="top_tb_func_synth.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="top_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="14166666666fs"></ZoomStartTime>
+      <ZoomEndTime time="45166666667fs"></ZoomEndTime>
+      <Cursor1Time time="28515100000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="299"></NameColumnWidth>
+      <ValueColumnWidth column_width="58"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="36" />
+   <wvobject fp_name="/top_tb/top/CLK_IN" type="logic">
+      <obj_property name="ElementShortName">CLK_IN</obj_property>
+      <obj_property name="ObjectShortName">CLK_IN</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/top/CLK_IN_IBUF" type="logic">
+      <obj_property name="ElementShortName">CLK_IN_IBUF</obj_property>
+      <obj_property name="ObjectShortName">CLK_IN_IBUF</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/top/CLK_IN_IBUF_BUFG" type="logic">
+      <obj_property name="ElementShortName">CLK_IN_IBUF_BUFG</obj_property>
+      <obj_property name="ObjectShortName">CLK_IN_IBUF_BUFG</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/top/CS" type="logic">
+      <obj_property name="ElementShortName">CS</obj_property>
+      <obj_property name="ObjectShortName">CS</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/top/CS_IBUF" type="logic">
+      <obj_property name="ElementShortName">CS_IBUF</obj_property>
+      <obj_property name="ObjectShortName">CS_IBUF</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/top/DRDY" type="logic">
+      <obj_property name="ElementShortName">DRDY</obj_property>
+      <obj_property name="ObjectShortName">DRDY</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/top/addrb1" type="array">
+      <obj_property name="ElementShortName">addrb1[6:0]</obj_property>
+      <obj_property name="ObjectShortName">addrb1[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/top/DRDY_OBUF" type="logic">
+      <obj_property name="ElementShortName">DRDY_OBUF</obj_property>
+      <obj_property name="ObjectShortName">DRDY_OBUF</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/top/MISO" type="logic">
+      <obj_property name="ElementShortName">MISO</obj_property>
+      <obj_property name="ObjectShortName">MISO</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/top/MISO_OBUF" type="logic">
+      <obj_property name="ElementShortName">MISO_OBUF</obj_property>
+      <obj_property name="ObjectShortName">MISO_OBUF</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/top/MOSI" type="logic">
+      <obj_property name="ElementShortName">MOSI</obj_property>
+      <obj_property name="ObjectShortName">MOSI</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/top/MOSI_IBUF" type="logic">
+      <obj_property name="ElementShortName">MOSI_IBUF</obj_property>
+      <obj_property name="ObjectShortName">MOSI_IBUF</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/top/RESET" type="logic">
+      <obj_property name="ElementShortName">RESET</obj_property>
+      <obj_property name="ObjectShortName">RESET</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/top/RESET_IBUF" type="logic">
+      <obj_property name="ElementShortName">RESET_IBUF</obj_property>
+      <obj_property name="ObjectShortName">RESET_IBUF</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/top/SCK" type="logic">
+      <obj_property name="ElementShortName">SCK</obj_property>
+      <obj_property name="ObjectShortName">SCK</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/top/SCK_IBUF" type="logic">
+      <obj_property name="ElementShortName">SCK_IBUF</obj_property>
+      <obj_property name="ObjectShortName">SCK_IBUF</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/top/addra0" type="array">
+      <obj_property name="ElementShortName">addra0[6:0]</obj_property>
+      <obj_property name="ObjectShortName">addra0[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/top/addra1" type="array">
+      <obj_property name="ElementShortName">addra1[6:0]</obj_property>
+      <obj_property name="ObjectShortName">addra1[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/top/addrb0" type="array">
+      <obj_property name="ElementShortName">addrb0[6:0]</obj_property>
+      <obj_property name="ObjectShortName">addrb0[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/top/byteReceived" type="logic">
+      <obj_property name="ElementShortName">byteReceived</obj_property>
+      <obj_property name="ObjectShortName">byteReceived</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/top/dina1" type="array">
+      <obj_property name="ElementShortName">dina1[7:0]</obj_property>
+      <obj_property name="ObjectShortName">dina1[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/top/doutb0" type="array">
+      <obj_property name="ElementShortName">doutb0[7:0]</obj_property>
+      <obj_property name="ObjectShortName">doutb0[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/top/doutb1" type="array">
+      <obj_property name="ElementShortName">doutb1[7:0]</obj_property>
+      <obj_property name="ObjectShortName">doutb1[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/top/finisha0" type="logic">
+      <obj_property name="ElementShortName">finisha0</obj_property>
+      <obj_property name="ObjectShortName">finisha0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/top/finisha1" type="logic">
+      <obj_property name="ElementShortName">finisha1</obj_property>
+      <obj_property name="ObjectShortName">finisha1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/top/finishb0" type="logic">
+      <obj_property name="ElementShortName">finishb0</obj_property>
+      <obj_property name="ObjectShortName">finishb0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/top/finishb1" type="logic">
+      <obj_property name="ElementShortName">finishb1</obj_property>
+      <obj_property name="ObjectShortName">finishb1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/top/readya0" type="logic">
+      <obj_property name="ElementShortName">readya0</obj_property>
+      <obj_property name="ObjectShortName">readya0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/top/readya1" type="logic">
+      <obj_property name="ElementShortName">readya1</obj_property>
+      <obj_property name="ObjectShortName">readya1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/top/readyb0" type="logic">
+      <obj_property name="ElementShortName">readyb0</obj_property>
+      <obj_property name="ObjectShortName">readyb0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/top/readyb1" type="logic">
+      <obj_property name="ElementShortName">readyb1</obj_property>
+      <obj_property name="ObjectShortName">readyb1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/top/receivedData" type="array">
+      <obj_property name="ElementShortName">receivedData[7:0]</obj_property>
+      <obj_property name="ObjectShortName">receivedData[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/top/sl_iport0" type="array">
+      <obj_property name="ElementShortName">sl_iport0[0:36]</obj_property>
+      <obj_property name="ObjectShortName">sl_iport0[0:36]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/top/sl_oport0" type="array">
+      <obj_property name="ElementShortName">sl_oport0[0:16]</obj_property>
+      <obj_property name="ObjectShortName">sl_oport0[0:16]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/top/u0_PINGPONG_RAM_i_1_n_0" type="logic">
+      <obj_property name="ElementShortName">u0_PINGPONG_RAM_i_1_n_0</obj_property>
+      <obj_property name="ObjectShortName">u0_PINGPONG_RAM_i_1_n_0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/top/wea1" type="logic">
+      <obj_property name="ElementShortName">wea1</obj_property>
+      <obj_property name="ObjectShortName">wea1</obj_property>
+   </wvobject>
+</wave_config>
