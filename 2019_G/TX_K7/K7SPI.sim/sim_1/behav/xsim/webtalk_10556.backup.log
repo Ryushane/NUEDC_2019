@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Webtalk v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Wed Jul 24 16:40:08 2019
+# Process ID: 10556
+# Current directory: E:/ryush/Documents/Project/Verilog/K7/K7SPI/K7SPI.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source E:/ryush/Documents/Project/Verilog/K7/K7SPI/K7SPI.sim/sim_1/behav/xsim/xsim.dir/top_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: E:/ryush/Documents/Project/Verilog/K7/K7SPI/K7SPI.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: E:/ryush/Documents/Project/Verilog/K7/K7SPI/K7SPI.sim/sim_1/behav/xsim\webtalk.jou
+#-----------------------------------------------------------
+source E:/ryush/Documents/Project/Verilog/K7/K7SPI/K7SPI.sim/sim_1/behav/xsim/xsim.dir/top_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 51.582 ; gain = 1.355
+INFO: [Common 17-206] Exiting Webtalk at Wed Jul 24 16:40:14 2019...

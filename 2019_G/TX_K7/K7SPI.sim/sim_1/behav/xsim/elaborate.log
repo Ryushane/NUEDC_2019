@@ -1,0 +1,109 @@
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: E:/Software/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto b830f96eb8ec42bb98759aca2d8431f5 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_1 -L xil_defaultlib -L xbip_utils_v3_0_8 -L axi_utils_v2_0_4 -L xbip_pipe_v3_0_4 -L xbip_bram18k_v3_0_4 -L mult_gen_v12_0_13 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_dsp48_addsub_v3_0_4 -L xbip_dsp48_multadd_v3_0_4 -L dds_compiler_v6_0_15 -L fifo_generator_v13_2_1 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot top_tb_behav xil_defaultlib.top_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-1374] size mismatch in mixed language port association, vhdl port m_axis_data_tdata [E:/ryush/Documents/Project/Verilog/2019_NUEDC/K7SPI/K7SPI.srcs/sources_1/imports/2019_NUEDC/FDM_MOD.v:48]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port ena [E:/ryush/Documents/Project/Verilog/2019_NUEDC/K7SPI/K7SPI.srcs/sources_1/new/top_0807_16bit.v:140]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port ena [E:/ryush/Documents/Project/Verilog/2019_NUEDC/K7SPI/K7SPI.srcs/sources_1/new/top_0807_16bit.v:175]
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 8 for port DA_DBPA [E:/ryush/Documents/Project/Verilog/2019_NUEDC/K7SPI/K7SPI.srcs/sources_1/new/top_0807_16bit.v:336]
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 8 for port DA_DBPB [E:/ryush/Documents/Project/Verilog/2019_NUEDC/K7SPI/K7SPI.srcs/sources_1/new/top_0807_16bit.v:337]
+WARNING: [VRFC 10-1783] select index 30 into current_contents is out of bounds [/wrk/2017.4/nightly/2017_12_15_2086221/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_4/simulation/blk_mem_gen_v8_4.v:2419]
+WARNING: [VRFC 10-1783] select index 62 into current_contents is out of bounds [/wrk/2017.4/nightly/2017_12_15_2086221/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_4/simulation/blk_mem_gen_v8_4.v:2420]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package xbip_utils_v3_0_8.xbip_utils_v3_0_8_pkg
+Compiling package xbip_utils_v3_0_8.xcc_utils_v3_0
+Compiling package dds_compiler_v6_0_15.dds_compiler_v6_0_15_viv_comp
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_signed
+Compiling package dds_compiler_v6_0_15.pkg_dds_compiler_v6_0_15
+Compiling package dds_compiler_v6_0_15.dds_compiler_v6_0_15_hdl_comps
+Compiling package xbip_pipe_v3_0_4.xbip_pipe_v3_0_4_viv_comp
+Compiling package axi_utils_v2_0_4.axi_utils_v2_0_4_pkg
+Compiling package ieee.math_real
+Compiling package axi_utils_v2_0_4.global_util_pkg
+Compiling package axi_utils_v2_0_4.axi_utils_comps
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_unsigned
+Compiling package dds_compiler_v6_0_15.pkg_betas
+Compiling package dds_compiler_v6_0_15.pkg_alphas
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=10.0,...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.clk_wiz_0_clk_wiz
+Compiling module xil_defaultlib.clk_wiz_0
+Compiling module xil_defaultlib.rstpulse
+Compiling module xil_defaultlib.DOWNSAMP
+Compiling module fifo_generator_v13_2_1.fifo_generator_v13_2_1_sync_stag...
+Compiling module fifo_generator_v13_2_1.fifo_generator_v13_2_1_bhv_ver_a...
+Compiling module fifo_generator_v13_2_1.fifo_generator_v13_2_1_CONV_VER(...
+Compiling module fifo_generator_v13_2_1.fifo_generator_vlog_beh(C_DATA_C...
+Compiling module fifo_generator_v13_2_1.fifo_generator_v13_2_1(C_EN_SAFE...
+Compiling module xil_defaultlib.fifo_generator_in_ns
+Compiling module xil_defaultlib.fifo_generator_in_ns1
+Compiling module xil_defaultlib.DEBOUNCE(LENGTH=4)
+Compiling module xil_defaultlib.SPI_slave
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_output_stage(...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_output_stage(...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_axi_regs_fwd_v8_4(C_DATA...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1(C_FAMILY="kin...
+Compiling module xil_defaultlib.blk_mem_gen_0
+Compiling module xil_defaultlib.PINGPONG_RAM
+Compiling module xil_defaultlib.BYTE_COMB
+Compiling architecture synth of entity xbip_pipe_v3_0_4.xbip_pipe_v3_0_4_viv [\xbip_pipe_v3_0_4_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_4.xbip_pipe_v3_0_4_viv [\xbip_pipe_v3_0_4_viv(c_latency=...]
+Compiling architecture synth of entity dds_compiler_v6_0_15.dds_compiler_v6_0_15_rdy [\dds_compiler_v6_0_15_rdy(c_has_...]
+Compiling architecture synth of entity xbip_pipe_v3_0_4.xbip_pipe_v3_0_4_viv [\xbip_pipe_v3_0_4_viv(c_has_ce=1...]
+Compiling architecture synth of entity xbip_pipe_v3_0_4.xbip_pipe_v3_0_4_viv [\xbip_pipe_v3_0_4_viv(c_has_ce=1...]
+Compiling architecture synth of entity xbip_pipe_v3_0_4.xbip_pipe_v3_0_4_viv [\xbip_pipe_v3_0_4_viv(c_has_ce=1...]
+Compiling architecture synth of entity xbip_pipe_v3_0_4.xbip_pipe_v3_0_4_viv [\xbip_pipe_v3_0_4_viv(c_latency=...]
+Compiling architecture synth of entity dds_compiler_v6_0_15.pipe_add [\pipe_add(c_width=12,c_seg_width...]
+Compiling architecture synth of entity dds_compiler_v6_0_15.accum [\accum(c_xdevicefamily="kintex7"...]
+Compiling architecture synth of entity xbip_pipe_v3_0_4.xbip_pipe_v3_0_4_viv [\xbip_pipe_v3_0_4_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_4.xbip_pipe_v3_0_4_viv [\xbip_pipe_v3_0_4_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_4.xbip_pipe_v3_0_4_viv [\xbip_pipe_v3_0_4_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_4.xbip_pipe_v3_0_4_viv [\xbip_pipe_v3_0_4_viv(c_latency=...]
+Compiling architecture synth of entity dds_compiler_v6_0_15.sin_cos [\sin_cos(c_xdevicefamily="kintex...]
+Compiling architecture synth of entity xbip_pipe_v3_0_4.xbip_pipe_v3_0_4_viv [\xbip_pipe_v3_0_4_viv(c_has_ce=1...]
+Compiling architecture synth of entity dds_compiler_v6_0_15.dds_compiler_v6_0_15_core [\dds_compiler_v6_0_15_core(c_xde...]
+Compiling architecture synth of entity dds_compiler_v6_0_15.dds_compiler_v6_0_15_viv [\dds_compiler_v6_0_15_viv(c_xdev...]
+Compiling architecture xilinx of entity dds_compiler_v6_0_15.dds_compiler_v6_0_15 [\dds_compiler_v6_0_15(c_xdevicef...]
+Compiling architecture dds_fdmlo_arch of entity xil_defaultlib.dds_fdmlo [dds_fdmlo_default]
+Compiling module xil_defaultlib.FDM_MOD
+Compiling architecture synth of entity xbip_pipe_v3_0_4.xbip_pipe_v3_0_4_viv [\xbip_pipe_v3_0_4_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_4.xbip_pipe_v3_0_4_viv [\xbip_pipe_v3_0_4_viv(c_latency=...]
+Compiling architecture synth of entity dds_compiler_v6_0_15.dds_compiler_v6_0_15_rdy [\dds_compiler_v6_0_15_rdy(c_has_...]
+Compiling architecture synth of entity xbip_pipe_v3_0_4.xbip_pipe_v3_0_4_viv [\xbip_pipe_v3_0_4_viv(c_has_ce=1...]
+Compiling architecture synth of entity xbip_pipe_v3_0_4.xbip_pipe_v3_0_4_viv [\xbip_pipe_v3_0_4_viv(c_has_ce=1...]
+Compiling architecture synth of entity xbip_pipe_v3_0_4.xbip_pipe_v3_0_4_viv [\xbip_pipe_v3_0_4_viv(c_latency=...]
+Compiling architecture synth of entity dds_compiler_v6_0_15.pipe_add [\pipe_add(c_width=48,c_seg_width...]
+Compiling architecture synth of entity dds_compiler_v6_0_15.accum [\accum(c_xdevicefamily="kintex7"...]
+Compiling architecture synth of entity xbip_pipe_v3_0_4.xbip_pipe_v3_0_4_viv [\xbip_pipe_v3_0_4_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_4.xbip_pipe_v3_0_4_viv [\xbip_pipe_v3_0_4_viv(c_has_ce=1...]
+Compiling architecture synth of entity xbip_pipe_v3_0_4.xbip_pipe_v3_0_4_viv [\xbip_pipe_v3_0_4_viv(c_has_ce=1...]
+Compiling architecture synth of entity dds_compiler_v6_0_15.sin_cos [\sin_cos(c_xdevicefamily="kintex...]
+Compiling architecture synth of entity xbip_pipe_v3_0_4.xbip_pipe_v3_0_4_viv [\xbip_pipe_v3_0_4_viv(c_has_ce=1...]
+Compiling architecture synth of entity dds_compiler_v6_0_15.dds_compiler_v6_0_15_core [\dds_compiler_v6_0_15_core(c_xde...]
+Compiling architecture synth of entity dds_compiler_v6_0_15.dds_compiler_v6_0_15_viv [\dds_compiler_v6_0_15_viv(c_xdev...]
+Compiling architecture xilinx of entity dds_compiler_v6_0_15.dds_compiler_v6_0_15 [\dds_compiler_v6_0_15(c_xdevicef...]
+Compiling architecture dds_out_arch of entity xil_defaultlib.dds_out [dds_out_default]
+Compiling module xil_defaultlib.FDM_OUT
+Compiling module xil_defaultlib.AD9709_Data
+Compiling module xil_defaultlib.AD9709_Top
+Compiling module xil_defaultlib.top_0807_16bit
+Compiling module xil_defaultlib.top_tb
+WARNING: [XSIM 43-3373] "E:/ryush/Documents/Project/Verilog/2019_NUEDC/K7SPI/K7SPI.srcs/sim_1/new/top_tb.v" Line 85. System function $fscanf is used as system task. This system function should have a LHS e.g. x=$fscanf().
+WARNING: [XSIM 43-3373] "E:/ryush/Documents/Project/Verilog/2019_NUEDC/K7SPI/K7SPI.srcs/sim_1/new/top_tb.v" Line 101. System function $fscanf is used as system task. This system function should have a LHS e.g. x=$fscanf().
+WARNING: [XSIM 43-3373] "E:/ryush/Documents/Project/Verilog/2019_NUEDC/K7SPI/K7SPI.srcs/sim_1/new/top_tb.v" Line 122. System function $fscanf is used as system task. This system function should have a LHS e.g. x=$fscanf().
+WARNING: [XSIM 43-3373] "E:/ryush/Documents/Project/Verilog/2019_NUEDC/K7SPI/K7SPI.srcs/sim_1/new/top_tb.v" Line 176. System function $fscanf is used as system task. This system function should have a LHS e.g. x=$fscanf().
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot top_tb_behav

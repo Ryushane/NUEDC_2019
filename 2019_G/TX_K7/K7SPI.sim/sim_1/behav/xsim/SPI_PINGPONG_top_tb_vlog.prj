@@ -1,0 +1,14 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../K7SPI.srcs/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v" \
+"../../../../DSP_module.v" \
+"../../../../PINGPONG_RAM.v" \
+"../../../../SPI_PINGPONG_top.v" \
+"../../../../SPI_slave.v" \
+"../../../../SPI_PINGPONG_top_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

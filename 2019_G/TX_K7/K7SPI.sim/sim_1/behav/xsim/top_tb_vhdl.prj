@@ -1,0 +1,9 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../K7SPI.srcs/sources_1/ip/dds_fdmlo/sim/dds_fdmlo.vhd" \
+"../../../../K7SPI.srcs/sources_1/ip/dds_fdmlo/demo_tb/tb_dds_fdmlo.vhd" \
+"../../../../K7SPI.srcs/sources_1/ip/dds_out/sim/dds_out.vhd" \
+"../../../../K7SPI.srcs/sources_1/ip/dds_out/demo_tb/tb_dds_out.vhd" \
+
+# Do not sort compile order
+nosort

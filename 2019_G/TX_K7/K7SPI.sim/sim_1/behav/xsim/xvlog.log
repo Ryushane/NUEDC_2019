@@ -1,0 +1,111 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/ryush/Documents/Project/Verilog/2019_NUEDC/K7SPI/K7SPI.srcs/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/ryush/Documents/Project/Verilog/2019_NUEDC/K7SPI/K7SPI.srcs/sources_1/ip/ila_spi/sim/ila_spi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ila_spi
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/ryush/Documents/Project/Verilog/2019_NUEDC/K7SPI/K7SPI.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/ryush/Documents/Project/Verilog/2019_NUEDC/K7SPI/K7SPI.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/ryush/Documents/Project/Verilog/2019_NUEDC/K7SPI/DSP_module.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DSP_module
+INFO: [VRFC 10-2458] undeclared symbol wea1, assumed default net type wire [E:/ryush/Documents/Project/Verilog/2019_NUEDC/K7SPI/DSP_module.v:24]
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/ryush/Documents/Project/Verilog/2019_NUEDC/K7SPI/PINGPONG_RAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PINGPONG_RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/ryush/Documents/Project/Verilog/2019_NUEDC/K7SPI/SPI_PINGPONG_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SPI_PINGPONG_top
+INFO: [VRFC 10-2458] undeclared symbol readyb1, assumed default net type wire [E:/ryush/Documents/Project/Verilog/2019_NUEDC/K7SPI/SPI_PINGPONG_top.v:55]
+INFO: [VRFC 10-2458] undeclared symbol readyb0, assumed default net type wire [E:/ryush/Documents/Project/Verilog/2019_NUEDC/K7SPI/SPI_PINGPONG_top.v:78]
+INFO: [VRFC 10-2458] undeclared symbol readya1, assumed default net type wire [E:/ryush/Documents/Project/Verilog/2019_NUEDC/K7SPI/SPI_PINGPONG_top.v:89]
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/ryush/Documents/Project/Verilog/2019_NUEDC/K7SPI/SPI_slave.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SPI_slave
+INFO: [VRFC 10-2458] undeclared symbol sck_risingEdge, assumed default net type wire [E:/ryush/Documents/Project/Verilog/2019_NUEDC/K7SPI/SPI_slave.v:40]
+INFO: [VRFC 10-2458] undeclared symbol dataNeeded, assumed default net type wire [E:/ryush/Documents/Project/Verilog/2019_NUEDC/K7SPI/SPI_slave.v:71]
+WARNING: [VRFC 10-756] identifier ssel_fallingEdge is used before its declaration [E:/ryush/Documents/Project/Verilog/2019_NUEDC/K7SPI/SPI_slave.v:61]
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/ryush/Documents/Project/Verilog/2019_NUEDC/K7SPI/K7SPI.srcs/sources_1/new/IOtest_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IOtest_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/ryush/Documents/Project/Verilog/2019_NUEDC/K7SPI/K7SPI.srcs/sources_1/new/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2458] undeclared symbol readyb1, assumed default net type wire [E:/ryush/Documents/Project/Verilog/2019_NUEDC/K7SPI/K7SPI.srcs/sources_1/new/top.v:88]
+INFO: [VRFC 10-2458] undeclared symbol readyb0, assumed default net type wire [E:/ryush/Documents/Project/Verilog/2019_NUEDC/K7SPI/K7SPI.srcs/sources_1/new/top.v:111]
+INFO: [VRFC 10-2458] undeclared symbol readya1, assumed default net type wire [E:/ryush/Documents/Project/Verilog/2019_NUEDC/K7SPI/K7SPI.srcs/sources_1/new/top.v:122]
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/ryush/Documents/Project/Verilog/2019_NUEDC/K7SPI/DEBOUNCE.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DEBOUNCE
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/ryush/Documents/Project/Verilog/2019_NUEDC/K7SPI/K7SPI.srcs/sources_1/new/top_0807_16bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_0807_16bit
+INFO: [VRFC 10-2458] undeclared symbol DS_CLK, assumed default net type wire [E:/ryush/Documents/Project/Verilog/2019_NUEDC/K7SPI/K7SPI.srcs/sources_1/new/top_0807_16bit.v:80]
+INFO: [VRFC 10-2458] undeclared symbol clklocked, assumed default net type wire [E:/ryush/Documents/Project/Verilog/2019_NUEDC/K7SPI/K7SPI.srcs/sources_1/new/top_0807_16bit.v:82]
+INFO: [VRFC 10-2458] undeclared symbol rst, assumed default net type wire [E:/ryush/Documents/Project/Verilog/2019_NUEDC/K7SPI/K7SPI.srcs/sources_1/new/top_0807_16bit.v:93]
+INFO: [VRFC 10-2458] undeclared symbol out_en0, assumed default net type wire [E:/ryush/Documents/Project/Verilog/2019_NUEDC/K7SPI/K7SPI.srcs/sources_1/new/top_0807_16bit.v:143]
+INFO: [VRFC 10-2458] undeclared symbol inwr_rst_busy0, assumed default net type wire [E:/ryush/Documents/Project/Verilog/2019_NUEDC/K7SPI/K7SPI.srcs/sources_1/new/top_0807_16bit.v:144]
+INFO: [VRFC 10-2458] undeclared symbol fdm_en, assumed default net type wire [E:/ryush/Documents/Project/Verilog/2019_NUEDC/K7SPI/K7SPI.srcs/sources_1/new/top_0807_16bit.v:156]
+INFO: [VRFC 10-2458] undeclared symbol infifo_empty0, assumed default net type wire [E:/ryush/Documents/Project/Verilog/2019_NUEDC/K7SPI/K7SPI.srcs/sources_1/new/top_0807_16bit.v:157]
+INFO: [VRFC 10-2458] undeclared symbol infifo_full0, assumed default net type wire [E:/ryush/Documents/Project/Verilog/2019_NUEDC/K7SPI/K7SPI.srcs/sources_1/new/top_0807_16bit.v:158]
+INFO: [VRFC 10-2458] undeclared symbol inrd_rst_busy0, assumed default net type wire [E:/ryush/Documents/Project/Verilog/2019_NUEDC/K7SPI/K7SPI.srcs/sources_1/new/top_0807_16bit.v:162]
+INFO: [VRFC 10-2458] undeclared symbol out_en1, assumed default net type wire [E:/ryush/Documents/Project/Verilog/2019_NUEDC/K7SPI/K7SPI.srcs/sources_1/new/top_0807_16bit.v:178]
+INFO: [VRFC 10-2458] undeclared symbol inwr_rst_busy1, assumed default net type wire [E:/ryush/Documents/Project/Verilog/2019_NUEDC/K7SPI/K7SPI.srcs/sources_1/new/top_0807_16bit.v:179]
+INFO: [VRFC 10-2458] undeclared symbol infifo_empty1, assumed default net type wire [E:/ryush/Documents/Project/Verilog/2019_NUEDC/K7SPI/K7SPI.srcs/sources_1/new/top_0807_16bit.v:192]
+INFO: [VRFC 10-2458] undeclared symbol infifo_full1, assumed default net type wire [E:/ryush/Documents/Project/Verilog/2019_NUEDC/K7SPI/K7SPI.srcs/sources_1/new/top_0807_16bit.v:193]
+INFO: [VRFC 10-2458] undeclared symbol inrd_rst_busy1, assumed default net type wire [E:/ryush/Documents/Project/Verilog/2019_NUEDC/K7SPI/K7SPI.srcs/sources_1/new/top_0807_16bit.v:197]
+INFO: [VRFC 10-2458] undeclared symbol readyb1, assumed default net type wire [E:/ryush/Documents/Project/Verilog/2019_NUEDC/K7SPI/K7SPI.srcs/sources_1/new/top_0807_16bit.v:256]
+INFO: [VRFC 10-2458] undeclared symbol readyb0, assumed default net type wire [E:/ryush/Documents/Project/Verilog/2019_NUEDC/K7SPI/K7SPI.srcs/sources_1/new/top_0807_16bit.v:280]
+INFO: [VRFC 10-2458] undeclared symbol DA_CLKA, assumed default net type wire [E:/ryush/Documents/Project/Verilog/2019_NUEDC/K7SPI/K7SPI.srcs/sources_1/new/top_0807_16bit.v:332]
+INFO: [VRFC 10-2458] undeclared symbol DA_CLKB, assumed default net type wire [E:/ryush/Documents/Project/Verilog/2019_NUEDC/K7SPI/K7SPI.srcs/sources_1/new/top_0807_16bit.v:333]
+INFO: [VRFC 10-2458] undeclared symbol DA_WRTA, assumed default net type wire [E:/ryush/Documents/Project/Verilog/2019_NUEDC/K7SPI/K7SPI.srcs/sources_1/new/top_0807_16bit.v:334]
+INFO: [VRFC 10-2458] undeclared symbol DA_WRTB, assumed default net type wire [E:/ryush/Documents/Project/Verilog/2019_NUEDC/K7SPI/K7SPI.srcs/sources_1/new/top_0807_16bit.v:335]
+INFO: [VRFC 10-2458] undeclared symbol DA_DBPA, assumed default net type wire [E:/ryush/Documents/Project/Verilog/2019_NUEDC/K7SPI/K7SPI.srcs/sources_1/new/top_0807_16bit.v:336]
+INFO: [VRFC 10-2458] undeclared symbol DA_DBPB, assumed default net type wire [E:/ryush/Documents/Project/Verilog/2019_NUEDC/K7SPI/K7SPI.srcs/sources_1/new/top_0807_16bit.v:337]
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/ryush/Documents/Project/Verilog/2019_NUEDC/K7SPI/K7SPI.srcs/sources_1/new/BYTE_COMB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BYTE_COMB
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/ryush/Documents/Project/Verilog/2019_NUEDC/K7SPI/K7SPI.srcs/sources_1/imports/2019_NUEDC/FDM_OUT.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FDM_OUT
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/ryush/Documents/Project/Verilog/2019_NUEDC/K7SPI/K7SPI.srcs/sources_1/imports/2019_NUEDC/FDM_MOD.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FDM_MOD
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/ryush/Documents/Project/Verilog/2019_NUEDC/K7SPI/K7SPI.srcs/sources_1/imports/new/AD9709_Top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AD9709_Top
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/ryush/Documents/Project/Verilog/2019_NUEDC/K7SPI/K7SPI.srcs/sources_1/imports/new/rstpulse.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rstpulse
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/ryush/Documents/Project/Verilog/2019_NUEDC/K7SPI/K7SPI.srcs/sources_1/imports/new/AD9709_Data.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AD9709_Data
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/ryush/Documents/Project/Verilog/2019_NUEDC/K7SPI/K7SPI.srcs/sources_1/imports/new/ADS4226_Data.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ADS4226_Data
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/ryush/Documents/Project/Verilog/2019_NUEDC/K7SPI/K7SPI.srcs/sources_1/imports/new/ADS4226_CLK.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ADS4226_CLK
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/ryush/Documents/Project/Verilog/2019_NUEDC/K7SPI/K7SPI.srcs/sources_1/imports/new/ADS4226_Top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ADS4226_Top
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/ryush/Documents/Project/Verilog/2019_NUEDC/K7SPI/K7SPI.srcs/sources_1/imports/new/INTERPOLATION.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module INTERPOLATION
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/ryush/Documents/Project/Verilog/2019_NUEDC/K7SPI/K7SPI.srcs/sources_1/imports/new/DOWNSAMP.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DOWNSAMP
+WARNING: [VRFC 10-756] identifier ds_counter is used before its declaration [E:/ryush/Documents/Project/Verilog/2019_NUEDC/K7SPI/K7SPI.srcs/sources_1/imports/new/DOWNSAMP.v:36]
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/ryush/Documents/Project/Verilog/2019_NUEDC/K7SPI/K7SPI.srcs/sources_1/ip/fifo_generator_in_ns/sim/fifo_generator_in_ns.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo_generator_in_ns
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/ryush/Documents/Project/Verilog/2019_NUEDC/K7SPI/K7SPI.srcs/sources_1/ip/fifo_generator_in_ns1/sim/fifo_generator_in_ns1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo_generator_in_ns1
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/ryush/Documents/Project/Verilog/2019_NUEDC/K7SPI/K7SPI.srcs/sources_1/imports/new/top_0808_0918_16bit_ADC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_0808_16bit
+INFO: [VRFC 10-2458] undeclared symbol DS_CLK, assumed default net type wire [E:/ryush/Documents/Project/Verilog/2019_NUEDC/K7SPI/K7SPI.srcs/sources_1/imports/new/top_0808_0918_16bit_ADC.v:67]
+INFO: [VRFC 10-2458] undeclared symbol clklocked, assumed default net type wire [E:/ryush/Documents/Project/Verilog/2019_NUEDC/K7SPI/K7SPI.srcs/sources_1/imports/new/top_0808_0918_16bit_ADC.v:69]
+INFO: [VRFC 10-2458] undeclared symbol rst, assumed default net type wire [E:/ryush/Documents/Project/Verilog/2019_NUEDC/K7SPI/K7SPI.srcs/sources_1/imports/new/top_0808_0918_16bit_ADC.v:80]
+INFO: [VRFC 10-2458] undeclared symbol out_en0, assumed default net type wire [E:/ryush/Documents/Project/Verilog/2019_NUEDC/K7SPI/K7SPI.srcs/sources_1/imports/new/top_0808_0918_16bit_ADC.v:127]
+INFO: [VRFC 10-2458] undeclared symbol inwr_rst_busy0, assumed default net type wire [E:/ryush/Documents/Project/Verilog/2019_NUEDC/K7SPI/K7SPI.srcs/sources_1/imports/new/top_0808_0918_16bit_ADC.v:128]
+INFO: [VRFC 10-2458] undeclared symbol fdm_en, assumed default net type wire [E:/ryush/Documents/Project/Verilog/2019_NUEDC/K7SPI/K7SPI.srcs/sources_1/imports/new/top_0808_0918_16bit_ADC.v:140]
+INFO: [VRFC 10-2458] undeclared symbol infifo_empty0, assumed default net type wire [E:/ryush/Documents/Project/Verilog/2019_NUEDC/K7SPI/K7SPI.srcs/sources_1/imports/new/top_0808_0918_16bit_ADC.v:141]
+INFO: [VRFC 10-2458] undeclared symbol infifo_full0, assumed default net type wire [E:/ryush/Documents/Project/Verilog/2019_NUEDC/K7SPI/K7SPI.srcs/sources_1/imports/new/top_0808_0918_16bit_ADC.v:142]
+INFO: [VRFC 10-2458] undeclared symbol inrd_rst_busy0, assumed default net type wire [E:/ryush/Documents/Project/Verilog/2019_NUEDC/K7SPI/K7SPI.srcs/sources_1/imports/new/top_0808_0918_16bit_ADC.v:146]
+INFO: [VRFC 10-2458] undeclared symbol out_en1, assumed default net type wire [E:/ryush/Documents/Project/Verilog/2019_NUEDC/K7SPI/K7SPI.srcs/sources_1/imports/new/top_0808_0918_16bit_ADC.v:162]
+INFO: [VRFC 10-2458] undeclared symbol inwr_rst_busy1, assumed default net type wire [E:/ryush/Documents/Project/Verilog/2019_NUEDC/K7SPI/K7SPI.srcs/sources_1/imports/new/top_0808_0918_16bit_ADC.v:163]
+INFO: [VRFC 10-2458] undeclared symbol infifo_empty1, assumed default net type wire [E:/ryush/Documents/Project/Verilog/2019_NUEDC/K7SPI/K7SPI.srcs/sources_1/imports/new/top_0808_0918_16bit_ADC.v:176]
+INFO: [VRFC 10-2458] undeclared symbol infifo_full1, assumed default net type wire [E:/ryush/Documents/Project/Verilog/2019_NUEDC/K7SPI/K7SPI.srcs/sources_1/imports/new/top_0808_0918_16bit_ADC.v:177]
+INFO: [VRFC 10-2458] undeclared symbol inrd_rst_busy1, assumed default net type wire [E:/ryush/Documents/Project/Verilog/2019_NUEDC/K7SPI/K7SPI.srcs/sources_1/imports/new/top_0808_0918_16bit_ADC.v:181]
+INFO: [VRFC 10-2458] undeclared symbol readyb1, assumed default net type wire [E:/ryush/Documents/Project/Verilog/2019_NUEDC/K7SPI/K7SPI.srcs/sources_1/imports/new/top_0808_0918_16bit_ADC.v:234]
+INFO: [VRFC 10-2458] undeclared symbol readyb0, assumed default net type wire [E:/ryush/Documents/Project/Verilog/2019_NUEDC/K7SPI/K7SPI.srcs/sources_1/imports/new/top_0808_0918_16bit_ADC.v:258]
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/ryush/Documents/Project/Verilog/2019_NUEDC/K7SPI/SPI_PINGPONG_top_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SPI_PINGPONG_top_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/ryush/Documents/Project/Verilog/2019_NUEDC/K7SPI/DSP_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DSP_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/ryush/Documents/Project/Verilog/2019_NUEDC/K7SPI/PINGPONG_RAM_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_PINGPONG_RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/ryush/Documents/Project/Verilog/2019_NUEDC/K7SPI/spi_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SPI_slave_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/ryush/Documents/Project/Verilog/2019_NUEDC/K7SPI/K7SPI.srcs/sim_1/new/top_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_tb

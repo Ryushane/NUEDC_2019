@@ -1,0 +1,1 @@
+-wto "b830f96eb8ec42bb98759aca2d8431f5" --incr --debug "typical" --relax --mt "2" -L "blk_mem_gen_v8_4_1" -L "xil_defaultlib" -L "unisims_ver" -L "unimacro_ver" -L "secureip" -L "xpm" --snapshot "SPI_PINGPONG_top_tb_behav" "xil_defaultlib.SPI_PINGPONG_top_tb" "xil_defaultlib.glbl" -log "elaborate.log" 
